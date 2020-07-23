@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Calibri;
+		background: linear-gradient(rgb(255, 205, 178), rgb(229, 152, 155))
+	}
+	.SurveyPage {
+		background-color: rgb(181, 131, 141);
+		width: 595px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		border-style: solid;
+		border-color: black;
+		border-radius: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.headbar {
+		text-align: center;
+		color: black;
+	}
+	.mainbar {
+		background-color: rgb(109, 104, 117);
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 10px;
+		color: white;
+		margin-bottom: 10px;
+	}
+	.YourName {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	.YourEmail {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	.YourAge {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;		
+	}
+	#dropdown {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;		
+	}
+	.questionone {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	.questiontwo {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	.questionthree {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	.Comments {
+		color: black;
+	}
+</style>
+
+<head>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>FunSurveyForm</title>
+</head>
+
+<body>
+	<div class="SurveyPage">
+		<div class="headbar">
+			<div id="title">
+				<h1>Super Short Fun Survey Questions</h1>	
+			</div>
+			<div id="description">
+				<p>This is a survey made for muthia's freecodecamp assignment</p>
+				<p><i>p.s thanks for participating yall</i> :D</p>
+			</div>
+		</div>
+		<div class="mainbar">
+			<div id="survey-form">
+				<div class="personalinformation">
+					<div class="YourName">
+						<label for="YourName"><b>Name</b></label>
+						<input type="text" id="name" name="YourName" placeholder="Enter Your Name" required>
+					</div>
+					<div class="YourEmail">
+						<label for="YourEmail"><b>Email</b></label>
+						<input type="text" id="email" pattern=".+@globex.com" name="YourEmail" placeholder="Enter Your Email" required>
+					</div>
+					<div class="YourAge">
+						<label for="YourAge"><b>Age</b></label>
+						<input type="text" id="number" name="YourAge" placeholder="Enter Your Age" min="0" max"200" required>
+					</div>
+				</div>
+				<div id="Gender">
+					<p><b>Gender</b></p>
+					<label for="Male"><input id="Male" type="radio" name="Gender" value="Male">Male</label><br>
+					<label for="Female"><input id="Female" type="radio" name="Gender" value="Female">Female</label><br>
+					<label for="Others"><input id="Others" type="radio" name="Gender" value="Others">Others</label><br>
+				</div>
+				<div id="dropdown">
+					<p><b>Which Continent Are You From?</b></p><br>
+					<select form="form-id" name="continentlist" form="survey-form" required> 
+						<option value="NorthAmerica">North America</option><br>
+						<option value="SouthAmerica">South America</option><br>
+						<option value="Europe">Europe</option><br>
+						<option value="Asia">Asia</option><br>
+						<option value="Africa">Africa</option><br>
+						<option value="Australia">Australia</option><br>
+						<option value="Antartica">Antartica</option><br>
+					</select>
+				</div>
+				<div class="questionone">
+						<label for="questionone"><b>What ridiculous thing has someone tricked you into doing or believing?</b></label>
+						<input type="text" id="name" name="questionone" required>
+				<div class="questiontwo">
+						<label for="questiontwo"><b>What’s your biggest screw up in the kitchen?</b></label>
+						<input type="text" id="name" name="questiontwo" required>		
+				<div class="questionthree">
+					<p><b>What are the signs of your mom getting pissed at you?</b></p>
+					<label for="fullname"><input id="fullname" type="checkbox" name="signs" value="fullname">Calling you by your full name</label>
+					<label for="countdown"><input id="countdown" type="checkbox" name="signs" value="countdown">Counting down to 1</label>
+					<label for="flexing"><input id="flexing" type="checkbox" name="signs" value="flexing">Flex at you with threatening quick heavy steps</label><br>
+				</select>
+			</div>
+		</div>
+		<div class="Comments">
+			<p style="color: white"><b>Think you got better questions to ask? Comment here!</b></p>
+			<textarea id="SurveyForm" name="SurveyFormComment" rows="4" cols="50" placeholder="Write Something..pls">
+			</textarea>
+			<br><br>
+		</div>
+	</div>
+</div>
+<input type="submit" value="Submit">
+</div>
+</body>
+
+</html>
