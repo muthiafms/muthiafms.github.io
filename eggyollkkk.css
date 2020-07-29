@@ -1,0 +1,132 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(22, 105, 122);
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+li a {
+	justify-content: space-between;
+	padding: 14px 16px;
+	font-size: 30px;
+	color: black;
+	text-decoration: none;
+}
+
+.icons {
+	color: black;
+}
+.header {
+	display: flex;
+	z-index: 1;
+	justify-content: space-around;
+	align-items: center;
+	height: 80px;
+	border-style:  solid;
+	border-color: black;
+	background-color: rgb(255, 166, 43);
+	width: 100%;
+}
+
+.profilelogo {
+	display: flex;
+	flex-direction: row;
+	font-family: Josefin Sans;
+	font-size: 20px;
+}
+
+.profilelogo img {
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition: transform .8s ease-in-out;
+}
+
+.profilelogo img:hover {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.mainpage {
+	margin-top: 30px;
+	justify-content: center;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;	
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+}
+
+.centertag {
+	display: flex;
+	font-family: Yrsa;
+	justify-content: center;
+	font-size: 40px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.centertag img {
+	float: left;
+	border-radius: 50%
+}
+
+.tagline {
+	margin-left: 1.5em;
+	color: rgb(237, 231, 227);
+}
+
+.heading {
+	font-family: Yrsa;
+	font-size: 40px;
+	padding: 10px;
+	background-color: rgb(237, 231, 227);
+	text-decoration: underline;
+}
+
+.portfolio {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center; 
+	background-color: rgb(130, 192, 204);
+	width: 1400px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px 0px #233D4D;
+}
+
+.productlandingpage {
+	margin-right: 5em;
+	color: black;
+	font-size: 25px;
+	font-family: Yrsa;
+	font-weight: 500;
+}
+
+.productlandingpage a {
+	text-decoration: none;
+	color: black;
+}
+.portfolio img {
+	float: right;
+}
+
+.footnote {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: rgb(237, 231, 227);
+	background-color: #233D4D;
+	width: 100%;
+}
+
