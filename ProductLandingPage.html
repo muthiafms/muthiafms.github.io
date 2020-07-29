@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<style>
+	body {
+		height: 100vh;
+		width: 100vw;
+		font-family: Comic Neue;
+	}
+	#header {
+		font-family: Concert One;
+		color: white;
+		position: fixed;
+		top: 0px;
+		display: flex;
+		z-index: 1;
+		justify-content: space-around;
+		align-items: center;
+		height: 80px;
+		background-color: black;
+		width: 100%;
+	}
+	#header-img {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-top: 15px;
+	}
+	h3 {
+		padding-left: 8px;
+	}
+	ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+	}
+	li a {
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	#form {
+		font-size: 50px;
+		size: 40px;
+		padding-bottom: 50px;
+	}
+	.mainpage {
+		position: relative;
+		top: 120px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#Features {
+		padding-bottom: 100px;
+	}
+	#video {
+		padding-bottom: 100px;
+	}
+	#Products {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.Stickers {
+		border-style: solid;
+		border-color: black;
+	}
+	.Notebook {
+		border-style: solid;
+		border-color: black;
+	}
+	.Planner {
+		border-style: solid;
+		border-color: black;
+	}
+
+</style>
+
+<head>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<link href='https://fonts.googleapis.com/css?family=Comic Neue' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
+	<title>MakeMineYours</title>
+</head>
+
+<body>
+	<div id="header">
+		<div id="header-img">
+			<img src="https://drive.google.com/uc?export=view&id=1svOiKhnQQLTw2S8homAlsvxHO_NcaO-X" alt="Mine Logo" style="width:150px;height:50px;">
+			<h3>Make Mine Yours</h3>
+		</div>
+		<div id="nav-bar">
+			<ul>
+				<li><a href="#Features" class="nav-link">Features</a></li>
+				<li><a href="#video" class="nav-link">Fun Video</a></li>
+				<li><a href="#Products" class="nav-link">Our Products</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mainpage">
+		<div id="form">
+			<form action="https://www.freecodecamp.com/email-submit"></form>
+			<label for="EmailAddress"><b>What's Mine is Yours</b></label><br>
+			<input type="text" id="email" name="EmailAddress" placeholder="Enter Your Email Address" required>
+			<input type="submit" value="Get Started">
+		</div>
+		<div id="Features">
+			<div class="Love">
+				<h1><i class="fa fa-heart fa-fwb" aria-hidden="true"></i>Made With Love</h1>
+				<p>Our products are 100% guaranteed to be love-crafted.</p>
+			</div>
+			<div class="Versatile">
+				<h1><i class="fa fa-smile-o" aria-hidden="true"></i>Versatile, Made to Fit You!</h1>
+				<p>Our products are made to fit your everyday lifestyle and personality.</p>
+			</div>
+			<div class="Ecofriendly">
+				<h1><i class="fa fa-envira" aria-hidden="true"></i>Ecofriendly</h1>
+				<p>We use no plastics for our packaging, and use solely bookpaper for both planner and notebook.</p>
+			</div>
+		</div>
+		<div id="video">
+			<iframe width="1000" height="500" src="https://www.youtube.com/embed/QH2-TGUlwu4">
+			</iframe>
+		</div>
+		<div id="Products">
+			<div class="Stickers">
+				<img src="https://drive.google.com/uc?export=view&id=1rPWosuKO5lE6v5RugZxX3mu_1mr3WCsh" alt="StickersMine" style="width:300px; height:400px;">
+				<p>Girl Power Sticker</p>
+			</div>
+			<div class="Notebook">
+				<img src="https://drive.google.com/uc?export=view&id=1FpF7F8pqqHRJ8yW9qBKDU0h8a8laX5D7" alt="NotebookMine" style="width:300px; height: 400px;">
+				<p>Galaxy Notebook</p>
+			</div>
+			<div class="Planner">
+				<img src="https://drive.google.com/uc?export=view&id=1cIjYGOdrZLgBzGZlQDA2E5Ts6L-MwR2A" alt="PlannerMine" style="width: 300px; height: 400px;">
+				<p>Planner - Monthly Section</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
