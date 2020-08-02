@@ -2,6 +2,8 @@
 	box-sizing: border-box;
 }
 body {
+	width: 100vw;
+	height: 100vh;
 	font-family: Calibri;
 	background-color: rgb(20, 33, 61);
 }	
@@ -50,6 +52,30 @@ body {
 }
 
 .submitbutton {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
+.tableform {
+	overflow-x: auto;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 20px auto auto auto;
+	width: 100vw;
+	min-width: 700px;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+th {
+	background-color: grey;
+}
+
+td {
+	background-color: white;
+}
