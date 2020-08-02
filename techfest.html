@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Muthia | TechFestSurvey</title>
-	<link rel="stylesheet" type="text/css" href="responsiveform.css" />
+	<link rel="stylesheet" type="text/css" href="techfest.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -12,25 +12,25 @@
 		</div>
 		<div class="surveypage">
 			<div class="personalinfo">
-				<div class="name">
+				<div class="input">
 					<label for="name"><b>Name</b></label>
 					<input type="text" id="name" name="YourName" placeholder="Enter Your Name" required>
 				</div><br>
-				<div class="gender">
+				<div class="input">
 					<p><b>Gender</b></p>
 					<label for="Male"><input id="Male" type="radio" name="gender" value="Male">Male</label>
 					<label for="Female"><input id="Female" type="radio" name="gender" value="Female">Female</label>
 					<label for="Others"><input id="Others" type="radio" name="gender" value="Others">Others</label>
 				</div><br>
-				<div class="occupation">
+				<div class="input">
 					<label for="occupation"><b>Occupation</b></label>
 					<input type="text" id="occupation" name="occupation" placeholder="Enter Your Occupation" required>
 				</div><br>
-				<div class="company">
+				<div class="input">
 					<label for="company"><b>Company</b></label>
 					<input type="text" id="company" name="company" placeholder="Company You Are Working For" required>
 				</div><br>
-				<div class="worklength">
+				<div class="input">
 					<b>Work Experience</b>
 					<select name="worklength">
 						<option value="0-1">0-1 Year</option>
@@ -39,14 +39,14 @@
 						<option value=">5">>5 Years</option>
 					</select>
 				</div><br>
-				<div class="address">
+				<div class="input">
 					<b>Address</b><br>
 					<label for="address"></label>
 					<input type="text" id="address" name="address" placeholder="Enter Your Address" required>
 					<label for="pincode"><b>Pin Code</b></label>
 					<input type="text" id="address" name="pincode" placeholder="Enter Your Pin Code" required>
 				</div><br>
-				<div class="dob"><b>Date of Birth</b><br>
+				<div class="input"><b>Date of Birth</b><br>
 					Day
 					<select name="day">
 						<option value='1'>1</option>
@@ -148,13 +148,13 @@
 					</select>
 				</div>
 			</div>
-			<div class="seminar">
+			<div class="inputgroup seminar">
 				<b>The Variant Of The Seminar</b><br>
 				<label for="1day"><input id="1day" type="radio" name="seminar" value="1day">1 Day</label>
 				<label for="2days"><input id="2days" type="radio" name="seminar" value="2days">2 Days</label>
 				<label for="fullpass"><input id="fullpass" type="radio" name="seminar" value="fullpass">Full Pass</label>
 			</div>
-			<div class="topics">
+			<div class="inputgroup topics">
 				<b>Topics You Might Be Interested In:</b><br>
 				<label for="webdev"><input id="webdev" type="checkbox" name="topics" value="webdev">Web Development</label><br>
 				<label for="programming"><input id="programming" type="checkbox" name="topics" value="programming">Programming</label><br>
