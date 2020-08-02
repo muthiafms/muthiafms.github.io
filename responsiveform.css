@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Calibri;
+	background-color: rgb(20, 33, 61);
+}	
+
+.responsiveform {
+	background-color: black;
+	width: 595px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	flex-wrap: wrap;
+}
+
+.header {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+
+.personalinfo { 
+	background-color: rgb(252, 163, 17);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius: 10px;
+	color: white;
+	margin-bottom: 10px;
+} 
+
+.name {
+	display: flex;
+	flex-direction: column;
+}
+
+.dob {
+	display: flex;
+	flex-direction: column;
+}
+
+.gender {
+	display: flex;
+	flex-direction: column;
+}
+
+.occupation {
+	display: flex;
+	flex-direction: column;
+}
+
+.company {
+	display: flex;
+	flex-direction: column;
+}
+
+.worklength {
+	display: flex;
+	flex-direction: column;
+}
+
+.address {
+	display: flex;
+	flex-direction: column;
+}
+.seminar {
+	background-color: rgb(229, 229, 229);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius: 10px;
+	color: black;
+	margin-bottom: 10px;
+}
+
+.topics {
+	background-color: rgb(255, 255, 255);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius: 10px;
+	color: black;
+	margin-bottom: 10px;
+}
+
+.submitbutton {
+	margin-bottom: 20px;
+}
+
