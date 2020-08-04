@@ -6,28 +6,22 @@ body {
 	height: 100vh;
 	font-family: Calibri;
 	background-color: black;
-}	
+}
 
-.mainpage {
-	background-color: white;
-	max-width: 800px;
-	margin: 0 auto 0 auto;
-	border-style: solid;
-	border-color: black;
-	border-radius: 10px;
-	padding: 10px 10px 0 10px;
+.resumepage {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
 }
 
 .header {
 	background-color: black;
-	max-width: 800px;
-	margin: auto;
-	border-radius: 10px;
 	padding: 0 10px 0 10px;
 	display: flex;
-	flex-direction: row;	
-	text-align: right;	
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: flex-end;
 }
 
 .header ul {
@@ -44,11 +38,27 @@ body {
 	text-decoration: none;
 }
 
+.mainpage {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+	padding: 50px 40px 20px 40px;
+}
+
 .upperprofile {
 	display: flex;
 	flex-flow: row wrap;
-	margin: 20px;
 	justify-content: space-between;
+}
+
+.introduction {
+	display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	justify-content: flex-start;
 }
 
 .introduction p {
@@ -56,14 +66,9 @@ body {
 }
 
 .introduction img {
-	float: left;
+	margin-right: 20px;
 }
 
-@media (max-width: 400px) {
-	.introduction img {
-		display: none;
-	}
-}
 
 .details {
 	display: flex;
@@ -77,31 +82,25 @@ body {
 	color: black;
 }
 
-.background {
+.content {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-@media (max-width: 400px); {
-	.background {
-		display: flex;
-		flex-flow: row wrap-reverse;
-	}
+.experience {
+	margin-right: 20px;
+	width: 70%;
+}
+
+.skills {
+	width: 30%;
 }
 
 h4 {
 	background-color: grey;
 	padding-left: 20px;
-}
-
-.employment {
-	width: 50%;
-}
-
-.skills {
-	width: 40%;
-}
+} 
 
 .leftcolumn {
 	color: black;
@@ -118,6 +117,7 @@ h4 {
 	text-align: right;
 	color: black;
 }
+
 .coloredcircle {
 	height: 20px;
 	width: 20px;
@@ -135,4 +135,38 @@ h4 {
 .language {
 	display: flex;
 	flex-direction: row;	
+}
+
+@media only screen and (max-width: 400px) {
+	.resumepage {
+		width: 100%;
+	}
+	.introduction img {
+		display: none;
+	}
+	.experience {
+		margin-right: 0;
+	}
+	.skills {
+		margin: 20px 0;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.resumepage {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.content {
+		flex-direction: column-reverse;
+		padding: 5px;
+	}
+	.experience {
+		width: 100%;
+	}
+	.skills {
+		width: 100%;
+	}
 }
